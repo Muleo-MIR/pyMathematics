@@ -1,21 +1,21 @@
 
 #quicksort algorithm 
 
+import numpy as np
+
 filename = "quicksortAlgorithm\output.txt"
-list = open(filename, "r").read().split(' ')
+array = np.loadtxt('quicksortAlgorithm\output.txt', dtype=int)
 
-print(list)
-
-def quicksort (list):
-    if len (list) <= 1:
-        return list
+def quicksort (array):
+    if len (array) <= 1:
+        return array
     else:
-        pivot = list[0]
-        left = [x for x in list[1:] if x < pivot]
-        right = [x for x in list[1:] if x >= pivot]
+        pivot = array[0]
+        left = [x for x in array[1:] if x < pivot]
+        right = [x for x in array[1:] if x >= pivot]
         return quicksort(left) + [pivot] + quicksort(right)
 
+sorted_array = quicksort(array)
+np.savetxt('quicksortAlgorithm\sortedoutput.txt', array, fmt='%d')
 
-sorted_list = quicksort(list)
-print(f'Sorted list:{sorted_list}')
-
+print(f'Sorted array:{sorted_array}')
