@@ -9,6 +9,6 @@ while B != 0:
     if A > B:
         A -= B
     else:
-        B -= A
+        B -= A 
 
 print(f'GCF({inputA},{inputB} = {A}')            
