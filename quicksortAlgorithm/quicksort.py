@@ -1,7 +1,11 @@
 
 #quicksort algorithm 
 
-list = [int(item) for item in input('Input list: ').split()]
+filename = "quicksortAlgorithm\output.txt"
+list = open(filename, "r")
+
+
+print(list)
 
 def quicksort (list):
     if len (list) <= 1:
