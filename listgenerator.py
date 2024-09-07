@@ -3,9 +3,6 @@
 
 import numpy as np
 
-n = 100
-lb = 1
-ub = 100
+lowerBound,upperBound,n = map(int,input('Input lower bound, upper bound and number of elements in list: ').split())
 
-
-print(list(np.random.randint(low = lb,high = ub,size = n)))
+print(list(np.random.randint(low = lowerBound,high = upperBound,size = n)))
