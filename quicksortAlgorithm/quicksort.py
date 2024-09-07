@@ -2,8 +2,7 @@
 #quicksort algorithm 
 
 filename = "quicksortAlgorithm\output.txt"
-list = open(filename, "r")
-
+list = open(filename, "r").read().split(' ')
 
 print(list)
 
