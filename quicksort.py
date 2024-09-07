@@ -1,3 +1,6 @@
+
+#quicksort algorithm 
+
 list = [int(item) for item in input('Input list: ').split()]
 
 def quicksort (list):
