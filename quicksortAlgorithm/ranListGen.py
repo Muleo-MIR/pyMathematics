@@ -4,7 +4,7 @@
 import numpy as np
 import os
 
-filename = "randomListGen\output.txt"
+filename = "quicksortAlgorithm\output.txt"
 os.makedirs(os.path.dirname(filename), exist_ok=True)
 f = open(filename, "w") 
 
